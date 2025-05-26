@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Your Online Shopping Destination</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header class="header-section sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-shopping-bag me-2"></i>ShopEase
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="ms-3 d-flex">
+                        <a href="#" class="btn btn-outline-light me-2"><i class="fas fa-user"></i></a>
+                        <a href="#" class="btn btn-outline-light"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Welcome to ShopEase</h1>
+                    <p class="lead">Discover amazing products at unbeatable prices. Quality you can trust, service you can rely on.</p>
+                    <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://i.ytimg.com/vi/U5Q3Du2W9a0/maxresdefault.jpg" alt="Shopping Banner" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Featured Products</h2>
+                <p>Check out our best selling items</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <div class="badge bg-danger position-absolute m-2">Sale</div>
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQVpEj65vw44BpwCGI5VRs6IDqMfKwvmOV6QdTjX7rlB1nYsstOK7MLlddcUrvY4P_0WL4p0TQFNFwMweNVD-BXMaAKpsgrVpJ34JlHhzAObNZ1ApDGICOM1RJP55UBPPlV0TESKlNzMqM&usqp=CAc" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Headphones</h5>
+                            <p class="card-text">Premium sound quality with noise cancellation feature. Perfect for music lovers.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$99.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text">Track your fitness, receive notifications and more with this stylish smart watch.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$149.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <div class="badge bg-success position-absolute m-2">New</div>
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQXOzTKHFNAR7Mzs4erceGBfvctf3YXVS7BBo1AC9hI8sPAIHIHiIAc-3yMCs9gWRRHzPxmFhJ1b_8G8fY6qHuYIuhHR-evwNVzvuf9UVW9kocs7jMZNJQP" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Bluetooth Speaker</h5>
+                            <p class="card-text">Portable speaker with 20 hours battery life and waterproof design.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$79.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Charger</h5>
+                            <p class="card-text">Fast charging pad compatible with all Qi-enabled devices.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$39.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box text-center p-4">
+                        <i class="fas fa-truck fa-3x mb-3 text-primary"></i>
+                        <h4>Free Shipping</h4>
+                        <p>On all orders over $50</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center p-4">
+                        <i class="fas fa-undo fa-3x mb-3 text-primary"></i>
+                        <h4>Easy Returns</h4>
+                        <p>30-day return policy</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center p-4">
+                        <i class="fas fa-lock fa-3x mb-3 text-primary"></i>
+                        <h4>Secure Payment</h4>
+                        <p>100% secure checkout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest updates on new products and upcoming sales</p>
+                    <form class="mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-dark" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-shopping-bag me-2"></i>ShopEase</h5>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#products" class="text-white">Products</a></li>
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">My Account</a></li>
+                        <li><a href="#" class="text-white">Order Tracking</a></li>
+                        <li><a href="#" class="text-white">Wishlist</a></li>
+                        <li><a href="#" class="text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Street, City, Country</li>
+                        <li><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@shopease.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 ShopEase. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
