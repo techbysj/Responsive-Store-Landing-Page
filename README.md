@@ -1,5 +1,11 @@
 Design Choices Explanation
 Responsive Layout:
+![front page](<Screenshot 2025-05-26 at 18.15.28.png>)
+![front page](<Screenshot 2025-05-26 at 18.15.39.png>)
+![mobile view](<Screenshot 2025-05-26 at 18.16.09.png>)
+![mobile view](<Screenshot 2025-05-26 at 18.16.19.png>)
+![mobile view](<Screenshot 2025-05-26 at 18.16.32.png>)
+
 
 Used Bootstrap's grid system for responsive columns
 
